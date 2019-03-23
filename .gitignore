@@ -7,7 +7,10 @@
 **/Makefile
 **/.ccls*
 **/*~
+**/.idea
+**/*.cbp
 
 #Other files
 **/*.xml
+**/tags
 
