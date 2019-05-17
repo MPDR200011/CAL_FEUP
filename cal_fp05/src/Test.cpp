@@ -154,7 +154,7 @@ void test_floydWarshall() {
 bool runAllTests(int argc, char const *argv[]) {
 	cute::suite s { };
 	s.push_back(CUTE(test_dijkstra));
-	s.push_back(CUTE(test_performance_dijkstra));
+	//s.push_back(CUTE(test_performance_dijkstra));
 	s.push_back(CUTE(test_bellmanFord));
 	s.push_back(CUTE(test_unweightedShortestPath));
 	s.push_back(CUTE(test_floydWarshall));

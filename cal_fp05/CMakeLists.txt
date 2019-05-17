@@ -9,3 +9,5 @@ include_directories(${CMAKE_SOURCE_DIR}/../include/)
 set(SRC src/Graph.h src/MutablePriorityQueue.h src/Test.cpp)
 
 add_executable(TP5 ${SRC})
+
+target_include_directories(TP5 PRIVATE ${Boost_INCLUDE_DIRS})
