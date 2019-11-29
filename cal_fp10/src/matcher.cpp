@@ -66,19 +66,20 @@ int kmpMatcher(string text, string pattern) {
 
 int numStringMatching(string filename, string toSearch) {
 
-	ifstream file(filename);
-
-	if (!file.is_open()) {
-		cout << "fodeu\n";
+	ifstream input;
+    input.open(filename);
+    
+	if (!input.is_open()) {
+		cout << "nao abriu\n";
 	}
 
 	int sum = 0;
 	string line;
-	while (getline(file, line)) {
+	while (getline(input, line)) {
 		sum += kmpMatcher(line, toSearch);
 	}
 
-	file.close();
+	input.close();
 
 	return sum;
 }

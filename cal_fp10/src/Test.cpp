@@ -33,8 +33,8 @@ void test_numStringMatching() {
 	int num1 = numStringMatching("text1.txt", "estrutura de dados");
 	ASSERT_EQUAL(3, num1);
 
-	int num2=numStringMatching("text2.txt", "estrutura de dados");
-	ASSERT_EQUAL(2,num2);
+	int num2 = numStringMatching("text2.txt", "estrutura de dados");
+	ASSERT_EQUAL(2, num2);
 }
 
 void test_numApproximateStringMatching() {
